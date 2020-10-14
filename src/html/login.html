@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>登录商城</title>
+	<link rel="stylesheet" href="../style/base.css" type="text/css">
+	<link rel="stylesheet" href="../style/global.css" type="text/css">
+	<link rel="stylesheet" href="../style/header.css" type="text/css">
+	<link rel="stylesheet" href="../style/login.css" type="text/css">
+	<link rel="stylesheet" href="../style/footer.css" type="text/css">
+	<link rel="stylesheet" href="../cj/formtest/main.css" type="text/css">
+	<link rel="stylesheet" href="../cj/formtest/lib/tip-yellowsimple/tip-yellowsimple.css" type="text/css">
+	<link rel="stylesheet" href="../style/sweetalert2.min.css" type="text/css">
+	<link rel="stylesheet" href="../style/top.css">
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/sweetalert2.min.js"></script>
+	<script type="text/javascript" src="../js/es6-promise.min.js"></script>
+	<script type="text/javascript" src="../cj/formtest/lib/jq.validate.js"></script>
+	<script type="text/javascript" src="../cj/formtest/lib/jquery.poshytip.js"></script>
+	<!-- 密码可见插件 -->
+	<script type="text/javascript" src="../cj/seepwd/js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="../cj/seepwd/js/hideShowPassword.min.js"></script>
+	<script type="text/javascript" src="../cj/seepwd/js/zepto.custom.js"></script>
+	<style>
+	.hideShowPassword-toggle {
+   		 background-image: url(../cj/seepwd/img/wink.svg);
+   		 background-position: 0 center;
+   		 background-repeat: no-repeat;
+   		 cursor: pointer;
+   		 height: 100%;
+   		 overflow: hidden;
+   		 text-indent: -9999em;
+   		 width: 44px;
+  }
+  .hideShowPassword-toggle-hide {
+    	background-position: -44px center;
+  }
+	</style>
+</head>
+<body>
+	<!-- 顶部导航 start -->
+	<div class="topnav">
+		<div class="topnav_bd w990 bc">
+			<div class="topnav_left">
+				
+			</div>
+			<div class="topnav_right fr">
+				<ul>
+					<li>您好，欢迎来到京西！[<a href="login.html">登录</a>] [<a href="regist.html">免费注册</a>] </li>
+					<li class="line">|</li>
+					<li>我的订单</li>
+					<li class="line">|</li>
+					<li>客户服务</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部导航 end -->
+	
+	<div style="clear:both;"></div>
+
+	<!-- 页面头部 start -->
+	<div class="header w990 bc mt15">
+		<div class="logo w990">
+			<h2 class="fl"><a href="index.html"><img src="../images/logo.png" alt="京西商城"></a></h2>
+		</div>
+	</div>
+	<!-- 页面头部 end -->
+	
+	<!-- 登录主体部分start -->
+	<div class="login w990 bc mt10">
+		<div class="login_hd">
+			<h2>用户登录</h2>
+			<b></b>
+		</div>
+		<div class="login_bd">
+			<div class="login_form fl">
+				<form action="" method="post" autocomplete="on">
+					<ul>
+						<li>
+							<label for="">用户名：</label>
+							<input type="text" class="txt" placeholder="请输入用户名或手机号" name="username" id="t1" name="t1" valType="required" msg="<font color=red>*</font>账号不能为空" />
+						</li>
+						<li>
+							<label for="">密码：</label>
+							<input type="password" class="txt" name="password" id='password-1' autocomplete="off"name="t2" valType="required" msg="<font color=red>*</font>密码不能为空"/>
+							<a href="">忘记密码?</a>
+						</li>
+						<li class="checkcode">
+							<label for="">验证码：</label>
+							<input type="text"  name="checkcode" autocomplete="off" class="txt"/>
+							<img src="http://kg.zhaodashen.cn/v1/public/captcha.jsp" alt="" />
+							<span>看不清？<a href="javaScript:">换一张</a></span>
+						</li>
+						<li>
+							<label for="">&nbsp;</label>
+							<input type="checkbox" class="chb"  /> 保存登录信息
+						</li>
+						<li>
+							<label for="">&nbsp;</label>
+							<input type="submit" value="" class="login_btn" />
+						</li>
+					</ul>
+				</form>
+
+				<div class="coagent mt15">
+					<dl>
+						<dt>使用合作网站登录商城：</dt>
+						<dd class="qq"><a href=""><span></span>QQ</a></dd>
+						<dd class="weibo"><a href=""><span></span>新浪微博</a></dd>
+						<dd class="yi"><a href=""><span></span>网易</a></dd>
+						<dd class="renren"><a href=""><span></span>人人</a></dd>
+						<dd class="qihu"><a href=""><span></span>奇虎360</a></dd>
+						<dd class=""><a href=""><span></span>百度</a></dd>
+						<dd class="douban"><a href=""><span></span>豆瓣</a></dd>
+					</dl>
+				</div>
+			</div>
+			
+			<div class="guide fl">
+				<h3>还不是商城用户</h3>
+				<p>现在免费注册成为商城用户，便能立刻享受便宜又放心的购物乐趣，心动不如行动，赶紧加入吧!</p>
+
+				<a href="regist.html" class="reg_btn">免费注册 >></a>
+			</div>
+
+		</div>
+	</div>
+	<!-- 登录主体部分end -->
+
+	<div style="clear:both;"></div>
+	<!-- 底部版权 start -->
+	<div class="footer w1210 bc mt15">
+		<p class="links">
+			<a href="">关于我们</a> |
+			<a href="">联系我们</a> |
+			<a href="">人才招聘</a> |
+			<a href="">商家入驻</a> |
+			<a href="">千寻网</a> |
+			<a href="">奢侈品网</a> |
+			<a href="">广告服务</a> |
+			<a href="">移动终端</a> |
+			<a href="">友情链接</a> |
+			<a href="">销售联盟</a> |
+			<a href="">京西论坛</a>
+		</p>
+		<p class="copyright">
+			 © 2005-2013 京东网上商城 版权所有，并保留所有权利。  ICP备案证书号:京ICP证070359号 
+		</p>
+		<p class="auth">
+			<a href=""><img src="../images/xin.png" alt="" /></a>
+			<a href=""><img src="../images/kexin.jpg" alt="" /></a>
+			<a href=""><img src="../images/police.jpg" alt="" /></a>
+			<a href=""><img src="../images/beian.gif" alt="" /></a>
+		</p>
+	</div>
+	<!-- 底部版权 end -->
+	<script>
+	// 失去光标判断用户名是否为空
+	// $('form li').eq(0).find('.txt').blur(function(){
+	// 	// 先定义一个变量，用来删除时存放span标签
+	// 	let temp
+	// 	// 如果input框为空
+	// 	if(!$(this).val()){
+	// 		// temp值不存在且span标签不存在，则添加一个span标签
+	// 		if(!temp&&$(this).parents('li').find('span').length==0){
+	// 			$(this).parents('li').append(`<span style="color:red">用户名为空!!!<span>`)
+	// 		}
+	// 		// 如果temp存在，span不存在，则直接恢复temp
+	// 		else if(temp){
+	// 			$(this).parents('li').html(temp)
+	// 		}
+	// 	}
+	// 	// 如果如果input框不为空且span标签存在,则先用span存储，再删除
+	// 	else if($(this).parents('li').find('span').length!=0){
+	// 		temp = $(this).parents('li').find('span')
+	// 			$(this).parents('li').find('span').remove()
+	// 	}
+	// 	// 判断有没有保存的密码，有的话直接填入
+	// 	if(sessionStorage.getItem($(this).val())){
+	// 		$('form .txt').eq(1).val(sessionStorage.getItem($(this).val()))
+	// 	}
+	// })
+		// 判断有没有保存的密码，有的话直接填入
+	$('.txt').eq(0).blur(function(){
+		if(localStorage.getItem($(this).val())){
+		$('form .txt').eq(1).val(localStorage.getItem($(this).val()))
+	}
+	})	
+	// 表单提交验证
+	$('form').submit(function(){
+		event.preventDefault()
+		let uname = $(this).find('.txt').eq(0).val()
+		let pwd = $(this).find('.txt').eq(1).val()
+		let captcha = $(this).find('.txt').eq(2).val()
+		$.post('/api/v1/public/login.jsp',{uname,pwd,captcha},(res)=>{
+			if(res.meta.state==200){
+				// 登陆成功判断是否保存登陆信息
+				if($('.chb').prop('checked')){
+					localStorage.setItem($('form .txt').eq(0).val(),$('form .txt').eq(1).val())
+					// localStorage.setItem('token',res.data.token)
+					// localStorage.setItem('uname',$('form .txt').eq(0).val())
+				}
+				swal({
+				  title: '登陆成功,正在跳转',
+				  text: '欢迎您：'+uname,
+				  type: 'success',
+				  showConfirmButton: false,
+				//   confirmButtonColor: '#3085d6',
+				//   confirmButtonText: '确认',
+				  time:1200
+				})
+				// .then(function(isConfirm) {
+				//   if (isConfirm) {
+					// 点击确认保存用户信息，跳转网页
+					sessionStorage.setItem('token',res.data.token)
+					sessionStorage.setItem('uname',$('form .txt').eq(0).val())
+					setTimeout(()=>{
+						location.href=localStorage.getItem('net')?localStorage.getItem('net'):'./index.html'	
+					},2000)
+				//   }
+				// })
+								
+			}
+			else{
+				swal({
+				  title: '登陆失败',
+				  text: res.meta.msg,
+				  type: 'error',
+				  confirmButtonColor: '#d33',
+				  confirmButtonText: '确认'
+				}).then(function(isConfirm) {
+				  if (isConfirm) {
+				   $('form').find('.txt').val('')
+				   $('form img').attr('src','http://kg.zhaodashen.cn/v1/public/captcha2.jsp')
+				  }
+				})
+			}
+		},'json')
+	})
+	// 切换验证码
+	$('form .checkcode a').click(function(){
+		$('form img').attr('src','http://kg.zhaodashen.cn/v1/public/captcha2.jsp')
+	})
+	// 密码可见
+	$('#password-1').hideShowPassword({
+	  innerToggle: true,
+	  touchSupport: Modernizr.touch
+	});
+</script>
+</body>
+</html>
